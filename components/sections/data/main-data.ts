@@ -68,7 +68,7 @@ export const quinceMainData = {
     },
     party: {
       time: "21:00 hrs.",
-      venue: "Salón Gales",
+      venue: "Jardín Gales",
       address: "Blvd. Londres # 803, entre París y Otancahui, Cd. Obregón, Sonora",
       type: "Recepción",
       ubiLink: "https://maps.app.goo.gl/6fgEwb91Ty4nzaGw8",

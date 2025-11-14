@@ -102,7 +102,7 @@ export default function DressCodeSection() {
           </div>
           
           {/* Mensaje principal - Animación desde la izquierda */}
-          <h3 className={`text-3xl font-bold text-black transition-all duration-700 delay-600 ${
+          <h3 className={`text-3xl font-bold text-white transition-all duration-700 delay-600 ${
             isVisible 
               ? 'opacity-100 translate-x-0' 
               : 'opacity-0 -translate-x-8'
@@ -112,7 +112,7 @@ export default function DressCodeSection() {
           
           {/* Subtítulo - Animación desde la derecha */}
           <p 
-            className={`text-2xl transition-all duration-700 delay-700 text-black font-bold ${
+            className={`text-2xl transition-all duration-700 delay-700 text-white font-bold ${
               isVisible 
                 ? 'opacity-100 translate-x-0' 
                 : 'opacity-0 translate-x-8'
