@@ -43,7 +43,7 @@ export default function HeroSection() {
     <section
       className="min-h-screen flex flex-col justify-center items-center relative pt-20"
     >
-      {/* Video de fondo */}
+      {/* Video de fondo 
       <video
         autoPlay
         loop
@@ -53,20 +53,20 @@ export default function HeroSection() {
         style={{ zIndex: 0 }}
       >
         <source src={hero.backgroundVideo} type="video/mp4" />
-        {/* Fallback a imagen si el video no carga */}
-      </video>
+        
+      </video>*/}
 
-    
+    <BackgroundCarrousel images={backgroundCarrouselImages || []} />
 
       {/* Contenido principal - Usar solo animación CSS, no scroll-based */}
       <div
         style={
           {
             //backgroundColor:'#C8BFE780'
-            display: 'none',
+            //display: 'none',
           }
         }
-        className="bg-slate-400 bg-opacity-50 p-6 rounded-2xl relative z-10 text-center space-y-6 px-4"
+        className=" p-6 rounded-2xl relative z-10 text-center space-y-6 px-4"
       >
         <h1
           style={{

@@ -62,8 +62,8 @@ export default function CeremonySection() {
     return isVisible ? `animate-${animationType} ${delay}` : '';
   };
 
-  const basicClass = "text-2xl font-bold text-rose-900";
-  const completeClass = "text-2xl font-bold text-rose-900 animate-elegant-float";
+  const basicClass = "text-2xl font-bold text-black";
+  const completeClass = "text-2xl font-bold text-black animate-elegant-float";
 
   // Configurar animación de scroll
   const animationConfig = getAnimationConfig("ceremony");
@@ -118,24 +118,24 @@ export default function CeremonySection() {
               {/* Card de Ceremonia - Slide desde izquierda */}
               <div className={getElegantAnimationClass(ceremonyCardVisible, 'card-slide-left', 'delay-400')}>
                 <div className="ceremony-card rounded-2xl p-8 text-center space-y-6 animate-theatrical-glow">
-                  <div className="text-5xl font-main-text mb-4 elegant-text-glow text-amber-500">
+                  <div className="text-5xl font-main-text mb-4 elegant-text-glow text-red-600">
                     Ceremonia
                   </div>
                   <h4 className={ceremonyCardVisible ? completeClass : basicClass}>
                     {ceremony.venue}
                   </h4>
                   <div className="flex items-center justify-center gap-2">
-                    <Clock className="w-6 h-6" style={{ color: '#FFD700' }} />
-                    <span className="text-2xl font-medium elegant-text-glow">
+                    <Clock className="w-6 h-6 text-black" />
+                    <span className="text-2xl font-medium text-black">
                       {ceremony.time}
                     </span>
                   </div>
-                  <p className="text-rose-900/80">
+                  <p className="text-black font-bold">
                     {ceremony.address}
                   </p>
                   <Button
                     onClick={() => window.open(ceremony.ubiLink, "_blank")}
-                    className="text-rose-900 rounded-full px-8 py-3 transform hover:scale-105 transition-all duration-300"
+                    className="text-black rounded-full px-8 py-3 transform hover:scale-105 transition-all duration-300"
                     style={{ backgroundColor: '#FFD700', hover: { backgroundColor: '#DAA520' } }}
                   >
                     <MapPin className="w-4 h-4 mr-2" />
@@ -163,24 +163,24 @@ export default function CeremonySection() {
               {/* Card de Recepción - Slide desde derecha */}
               <div className={getElegantAnimationClass(partyCardVisible, 'card-slide-right', 'delay-800')}>
                 <div className="ceremony-card rounded-2xl p-8 text-center space-y-6 animate-theatrical-glow">
-                  <div className="text-5xl font-main-text mb-4 elegant-text-glow" style={{ color: '#DC143C' }}>
+                  <div className="text-5xl font-main-text mb-4 elegant-text-glow text-red-600">
                     Recepción
                   </div>
-                  <h4 className={partyCardVisible ? "text-2xl font-bold text-amber-500 animate-elegant-float" : "text-2xl font-bold text-amber-500"}>
+                  <h4 className={partyCardVisible ? "text-2xl font-bold text-black animate-elegant-float" : "text-2xl font-bold text-black"}>
                     {party.venue}
                   </h4>
                   <div className="flex items-center justify-center gap-2">
-                    <Clock className="w-6 h-6 text-amber-500" />
-                    <span className="text-2xl font-medium text-amber-500">
+                    <Clock className="w-6 h-6 text-black" />
+                    <span className="text-2xl font-medium text-black">
                       {party.time}
                     </span>
                   </div>
-                  <p className="text-amber-500 font-bold">
+                  <p className="text-black font-bold">
                     {party.address}
                   </p>
                   <Button
                     onClick={() => window.open(party.ubiLink, "_blank")}
-                    className="text-rose-900 rounded-full px-8 py-3 transform hover:scale-105 transition-all duration-300"
+                    className="text-black rounded-full px-8 py-3 transform hover:scale-105 transition-all duration-300"
                     style={{ backgroundColor: '#DC143C', hover: { backgroundColor: '#B22222' } }}
                   >
                     <MapPin className="w-4 h-4 mr-2" />

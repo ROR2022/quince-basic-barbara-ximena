@@ -73,7 +73,7 @@ export default function DressCodeSection() {
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Título - Animación desde arriba */}
           <h2 
-            className={`font-main-text text-5xl text-amber-700 transition-all duration-700 ${
+            className={`font-main-text text-5xl text-red-600 transition-all duration-700 ${
               isVisible 
                 ? 'opacity-100 translate-y-0' 
                 : 'opacity-0 -translate-y-8'
@@ -102,7 +102,7 @@ export default function DressCodeSection() {
           </div>
           
           {/* Mensaje principal - Animación desde la izquierda */}
-          <h3 className={`text-3xl font-bold text-rose-900 transition-all duration-700 delay-600 ${
+          <h3 className={`text-3xl font-bold text-black transition-all duration-700 delay-600 ${
             isVisible 
               ? 'opacity-100 translate-x-0' 
               : 'opacity-0 -translate-x-8'
@@ -112,7 +112,7 @@ export default function DressCodeSection() {
           
           {/* Subtítulo - Animación desde la derecha */}
           <p 
-            className={`text-2xl transition-all duration-700 delay-700 text-rose-900 font-bold ${
+            className={`text-2xl transition-all duration-700 delay-700 text-black font-bold ${
               isVisible 
                 ? 'opacity-100 translate-x-0' 
                 : 'opacity-0 translate-x-8'
@@ -129,7 +129,7 @@ export default function DressCodeSection() {
                 ? 'opacity-100 translate-y-0' 
                 : 'opacity-0 translate-y-8'
             }`}
-            style={{ color: '#DC143C' }}
+            style={{ color: '#DC143C', display:'none' }}
           >
             {dressCode.restriction}
           </p>

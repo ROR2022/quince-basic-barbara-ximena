@@ -126,7 +126,7 @@ export default function DateSection() {
           
           {/* Mensaje inicial con animación cósmica */}
           <div className={getCosmicAnimationClass(titleVisible, 'cosmic-fade-in', 'delay-100')}>
-            <p className="text-lg text-rose-900 italic font-bold">
+            <p className="text-lg text-black italic font-bold">
               {date.mensaje1}
             </p>
           </div>
@@ -138,7 +138,7 @@ export default function DateSection() {
                 textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
                 //color: '#FFD700' // Dorado
               }}
-              className="font-main-text text-4xl font-bold text-amber-500"
+              className="font-main-text text-4xl font-bold text-red-600"
             >
               FECHA ESPECIAL
             </h2>
@@ -160,7 +160,7 @@ export default function DateSection() {
               {/* Contenido de la card */}
               <div className="relative z-20">
                 <div 
-                  className="text-2xl font-medium mb-2 text-glow text-rose-900"
+                  className="text-2xl font-medium mb-2 text-glow text-black"
                   //style={{ color: '#C0C0C0' }} // Plata
                 >
                   {date.day ? date.day.toUpperCase() : 'SÁBADO'}
@@ -173,14 +173,14 @@ export default function DateSection() {
                 </div>
                 
                 <div 
-                  className="text-2xl font-medium mb-2 text-glow text-rose-900"
+                  className="text-2xl font-medium mb-2 text-glow text-black"
                   //style={{ color: '#C0C0C0' }} // Plata
                 >
                   {date.month ? date.month.toUpperCase() : 'DICIEMBRE'}
                 </div>
                 <div 
-                  className="text-3xl font-medium holographic-text"
-                  style={{ color: '#FFD700' }} // Dorado
+                  className="text-3xl font-medium text-black"
+                  //style={{ color: '#FFD700' }} // Dorado
                 >
                   {date.year || '2025'}
                 </div>
@@ -208,7 +208,7 @@ export default function DateSection() {
           {/* Mensaje final */}
           <div className={getCosmicAnimationClass(cardVisible, 'cosmic-fade-in', 'delay-500')}>
             <h3 
-              className="font-script text-3xl text-amber-500 font-bold"
+              className="font-script text-3xl text-black font-bold"
               //style={{ color: '#FFD700' }} // Dorado
             >
               {date.mensaje2}

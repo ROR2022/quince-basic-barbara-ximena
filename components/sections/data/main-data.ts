@@ -7,10 +7,10 @@ export const quinceMainData = {
     quote:
       "La vida es un viaje mágico, y hoy celebro un capítulo especial lleno de sueños y esperanza.",
     backgroundCarrouselImages: [
-      "/images/quince1.jpeg",
-      "/images/quince2.jpeg",
-      "/images/quince3.jpeg",
-      "/images/quince4.jpeg",
+      "/images/bj1.jpg",
+      "/images/bj2.jpg",
+      "/images/bj3.jpg",
+      "/images/bj4.jpg",
     ],
   },
   welcomeSection: {
@@ -39,7 +39,7 @@ export const quinceMainData = {
     date: {
       full: "Viernes 05 de Diciembre 2025",
       isoDate: "2025-12-05T17:00:00",
-      day: "Sábado",
+      day: "Viernes",
       dayNumber: "05",
       month: "Diciembre",
       year: "2025",
@@ -201,15 +201,6 @@ export const quinceMainData = {
           "Tu presencia es el mejor regalo, pero si deseas contribuir, una lluvia de sobres sería muy apreciada.",
         image: "/images/gifts/envelope.png",
         link: "https://example.com/lluvia-de-sobres",
-      },
-      {
-        id: "transferencia",
-        name: "Transferencia Bancaria",
-        icon: "🏦",
-        description:
-          "Si prefieres, puedes hacer una transferencia bancaria como regalo.",
-        image: "/images/gifts/bank-transfer.png",
-        link: "https://example.com/transferencia-bancaria",
       },
       {
         id: "regaloSorpresa",

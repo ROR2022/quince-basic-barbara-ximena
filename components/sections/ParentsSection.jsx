@@ -106,7 +106,7 @@ export default function ParentsSection() {
               {/* Mensaje principal con animación */}
               <div 
               className={`flex flex-col items-center justify-center ${getAnimationClass(messageVisible, 'fade-in-up', 'delay-200')}`}>
-                <p className="text-lg italic max-w-2xl mx-auto text-amber-500 font-bold text-glow">
+                <p className="text-lg italic max-w-2xl mx-auto text-black font-bold text-glow">
                   {parents.message}
                 </p>
               </div>

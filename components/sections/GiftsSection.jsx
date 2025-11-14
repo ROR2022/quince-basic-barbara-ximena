@@ -71,7 +71,7 @@ export default function GiftsSection() {
           }`}>
             <h2 
               style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}
-              className="font-main-text text-5xl text-amber-500"
+              className="font-main-text text-5xl text-red-600"
             >
               Regalo
             </h2>
@@ -84,14 +84,14 @@ export default function GiftsSection() {
               : 'opacity-0 scale-75'
           }`}>
             <div className="bg-muted/50 rounded-2xl p-8 max-w-md mx-auto">
-              <Gift className="w-16 h-16 text-rose-900 mx-auto mb-4" />
+              <Gift className="w-16 h-16 text-black mx-auto mb-4" />
               <h3 
                 style={{display:'none'}}
                 className="font-script text-3xl text-white mb-4"
               >
                 {gifts.type}
               </h3>
-              <p className="text-rose-900 font-bold">{gifts.message}</p>
+              <p className="text-black font-bold">{gifts.message}</p>
             </div>
           </div>
           {/* Cards de opciones con animaciones escalonadas */}
