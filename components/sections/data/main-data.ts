@@ -10,7 +10,6 @@ export const quinceMainData = {
       "/images/bj1.jpg",
       "/images/bj2.jpg",
       "/images/bj3.jpg",
-      "/images/bj4.jpg",
     ],
   },
   welcomeSection: {
